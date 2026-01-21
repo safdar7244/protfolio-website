@@ -10,11 +10,41 @@ import parkingImg from "../assets/screenshots/parking.jpeg";
 import universityImg from "../assets/screenshots/university-app.png";
 import spotifyImg from "../assets/screenshots/spotify-bot.jpg";
 import chatImg from "../assets/screenshots/chat-app.png";
+import pawtnerImg from "../assets/screenshots/pawtner.jpeg";
+import docTalkImg from "../assets/screenshots/doctalk.jpg";
+
+
 
 const ProjectSection = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const projects = [
+    {
+      name: "DocTalk",
+      description:
+        "An AI-powered SaaS platform for document chat using RAG. Upload PDFs or Word files and interact through natural language. Features AWS Cognito auth, S3 storage, Lambda processing pipeline, and pgvector for semantic search.",
+      technologies: ["Next.js", "React", "TypeScript", "AWS", "PostgreSQL", "OpenAI"],
+      sourceCodeLink: "https://github.com/safdar7244/doctalk-new",
+      demoLink: "https://master.d1sbqasr1p5d9u.amplifyapp.com/",
+      screenshot: docTalkImg,
+      hasDemo: true,
+      hasSourceCode: true,
+      category: "AI/ML",
+      featured: true,
+    },
+    {
+      name: "Paw-tner",
+      description:
+        "A pet adoption platform connecting animal shelters with potential adopters. Features pet listings with filtering, personalized matching, favorites management, shelter dashboards with statistics, and photo uploads via Cloudinary.",
+      technologies: ["React", "FastAPI", "PostgreSQL", "Tailwind CSS", "Cloudinary"],
+      sourceCodeLink: "",
+      demoLink: "https://paw-tner-qr3m.vercel.app/",
+      screenshot: pawtnerImg,
+      hasDemo: true,
+      hasSourceCode: false,
+      category: "Web",
+      featured: true,
+    },
     {
       name: "Kozgo",
       description:

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 const ProjectCard = ({
@@ -13,6 +14,8 @@ const ProjectCard = ({
   featured,
   index,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -46,12 +49,18 @@ const ProjectCard = ({
       </div>
 
       {/* Image container */}
-      <div className="relative h-56 overflow-hidden">
-        <img
-          src={screenshot}
-          alt={`${name} Screenshot`}
-          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-        />
+      <div className="relative h-56 overflow-hidden bg-gray-100">
+        {screenshot ? (
+          <img
+            src={screenshot}
+            alt={`${name} Screenshot`}
+            className="w-full h-full object-contain object-center transform group-hover:scale-105 transition-transform duration-700"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center">
+            <span className="text-5xl font-bold text-white/90">{name.charAt(0)}</span>
+          </div>
+        )}
         {/* Overlay on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
@@ -87,7 +96,19 @@ const ProjectCard = ({
         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
           {name}
         </h3>
-        <p className="text-gray-600 mb-4 line-clamp-2">{description}</p>
+        <div className="mb-4">
+          <p className={`text-gray-600 ${isExpanded ? "" : "line-clamp-2"}`}>
+            {description}
+          </p>
+          {description.length > 100 && (
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="text-primary-600 hover:text-primary-700 text-sm font-medium mt-1 transition-colors"
+            >
+              {isExpanded ? "Show less" : "Read more"}
+            </button>
+          )}
+        </div>
 
         {/* Technologies */}
         <div className="flex flex-wrap gap-2">

@@ -4,17 +4,32 @@ import ssiLogo from "../assets/ssi-logo.jpg";
 import tapsnclicksLogo from "../assets/tapsnclicks.png";
 import fiverLogo from "../assets/Fiverr-Logo.png";
 import boost79Logo from "../assets/boost79.jpg";
+import all3dLogo from "../assets/all3d_logo.png";
 
 const ExperienceSection = () => {
   const experiences = [
     {
+      company: "ALL3D",
+      title: "Web Engineer",
+      dateRange: "July 2025 - Present",
+      type: "Full-time",
+      location: "Remote",
+      responsibilities: [
+        "Implementing end-to-end features for web applications",
+        "Building scalable solutions using Python, React, and AWS",
+        "Working with generative AI to enhance product capabilities",
+      ],
+      companyLogo: all3dLogo,
+      technologies: ["Python", "React", "AWS", "Generative AI"],
+    },
+    {
       company: "Strategic Systems International",
       title: "Software Engineer",
-      dateRange: "July 2022 - Present",
+      dateRange: "July 2022 - June 2025",
       type: "Full-time",
       location: "Lahore, Pakistan",
       responsibilities: [
-        "Currently working on Vendor Management System for Cross Country Healthcare, Inc",
+        "Worked on Vendor Management System for Cross Country Healthcare, Inc",
         "Responsible for developing new features using Angular and .Net",
         "Responsible for maintaining, enhancing and migrating internal frontend framework built on top of Angular",
         "Migrated the VMS app frontend from Angular version 10 to Angular version 15",
@@ -151,12 +166,18 @@ const ExperienceSection = () => {
 
                   {/* Header */}
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="w-14 h-14 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0 shadow-sm">
-                      <img
-                        src={experience.companyLogo}
-                        alt={experience.company}
-                        className="w-full h-full object-cover"
-                      />
+                    <div className="w-14 h-14 rounded-xl overflow-hidden bg-white flex-shrink-0 shadow-sm flex items-center justify-center border border-gray-200 p-1.5">
+                      {experience.companyLogo ? (
+                        <img
+                          src={experience.companyLogo}
+                          alt={experience.company}
+                          className="w-full h-full object-contain"
+                        />
+                      ) : (
+                        <span className="text-xl font-bold text-primary-600">
+                          {experience.company.charAt(0)}
+                        </span>
+                      )}
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-xl font-bold text-gray-900 truncate">
