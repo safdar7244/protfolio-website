@@ -25,7 +25,7 @@ const ProjectSection = () => {
         "An AI-powered SaaS platform for document chat using RAG. Upload PDFs or Word files and interact through natural language. Features AWS Cognito auth, S3 storage, Lambda processing pipeline, and pgvector for semantic search.",
       technologies: ["Next.js", "React", "TypeScript", "AWS", "PostgreSQL", "OpenAI"],
       sourceCodeLink: "https://github.com/safdar7244/doctalk-new",
-      demoLink: "https://master.d1sbqasr1p5d9u.amplifyapp.com/",
+      demoLink: "https://doctalk-new-delta.vercel.app//",
       screenshot: docTalkImg,
       hasDemo: true,
       hasSourceCode: true,
