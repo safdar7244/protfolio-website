@@ -123,7 +123,7 @@ const ContactSection = () => {
       ),
       label: "LinkedIn",
       value: "Connect with me",
-      href: "https://linkedin.com/in/mohamedsafdar",
+      href: "https://www.linkedin.com/in/mohamed-safdar-276a85218/",
     },
   ];
 
@@ -219,7 +219,7 @@ const ContactSection = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://linkedin.com/in/mohamedsafdar"
+                    href="https://www.linkedin.com/in/mohamed-safdar-276a85218/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"

@@ -10,16 +10,16 @@ const SkillsSection = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       ),
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "C/C++"],
+      skills: ["TypeScript", "JavaScript", "Python", "C#"],
     },
     {
-      title: "Frontend",
+      title: "Frontend & Mobile",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      skills: ["React", "Angular", "Vue.js", "HTML/CSS", "Tailwind CSS", "Next.js"],
+      skills: ["React", "Next.js", "Angular", "Ignite UI", "React Native", "Tailwind CSS", "Redux Toolkit"],
     },
     {
       title: "Backend",
@@ -28,25 +28,25 @@ const SkillsSection = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
         </svg>
       ),
-      skills: ["Node.js", "Express", "Firebase", "Django", ".NET","NestJS","Next.js","FastAPI"],
+      skills: ["Node.js", "NestJS", "Express", "FastAPI", "Django", ".NET", "Socket.IO"],
     },
     {
-      title: "Database",
+      title: "AI & LLMs",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
         </svg>
       ),
-      skills: ["MySQL", "MongoDB", "PostgreSQL", "Firestore"],
+      skills: ["OpenAI API", "LangChain", "RAG", "pgvector", "TensorFlow"],
     },
     {
-      title: "Mobile",
+      title: "Cloud & Databases",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
         </svg>
       ),
-      skills: ["React Native", "Android (Java)"],
+      skills: ["AWS Lambda", "S3", "API Gateway", "SQS", "EventBridge", "Aurora Serverless", "Cognito", "CloudWatch", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase"],
     },
     {
       title: "Tools & Others",
@@ -56,7 +56,7 @@ const SkillsSection = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      skills: ["Git", "Docker", "Socket.IO", "Puppeteer", "Stripe API"],
+      skills: ["Docker", "Git", "GitHub", "GitLab", "Postman", "Bun", "Claude Code", "Codex", "Puppeteer", "Stripe API"],
     },
   ];
 
@@ -96,8 +96,8 @@ const SkillsSection = () => {
             Skills & Technologies
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            A comprehensive toolkit built over 4+ years of professional experience
-            in full-stack development
+            A toolkit built over 5+ years of full-stack development, from frontend
+            frameworks to AWS and AI integrations
           </p>
         </motion.div>
 
@@ -155,15 +155,15 @@ const SkillsSection = () => {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               "React",
+              "Next.js",
               "Angular",
               "Node.js",
               "TypeScript",
               "Python",
-              "Firebase",
-              "MySQL",
-              "MongoDB",
-              "React Native",
-              "Docker",
+              "FastAPI",
+              "AWS",
+              "PostgreSQL",
+              "OpenAI",
             ].map((tech) => (
               <motion.span
                 key={tech}

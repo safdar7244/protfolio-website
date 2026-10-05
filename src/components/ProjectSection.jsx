@@ -22,10 +22,10 @@ const ProjectSection = () => {
     {
       name: "DocTalk",
       description:
-        "An AI-powered SaaS platform for document chat using RAG. Upload PDFs or Word files and interact through natural language. Features AWS Cognito auth, S3 storage, Lambda processing pipeline, and pgvector for semantic search.",
-      technologies: ["Next.js", "React", "TypeScript", "AWS", "PostgreSQL", "OpenAI"],
+        "An AI-powered SaaS platform for document chat using RAG. Upload PDFs or Word files and interact through natural language. Features AWS Cognito auth, S3 storage, a Python Lambda processing pipeline, and pgvector for semantic search.",
+      technologies: ["Next.js", "OpenAI", "AWS", "PostgreSQL", "pgvector", "Python", "TypeScript"],
       sourceCodeLink: "https://github.com/safdar7244/doctalk-new",
-      demoLink: "https://doctalk-new-delta.vercel.app//",
+      demoLink: "https://doctalk-new-delta.vercel.app/",
       screenshot: docTalkImg,
       hasDemo: true,
       hasSourceCode: true,
@@ -78,8 +78,8 @@ const ProjectSection = () => {
       technologies: ["React", "Node.js", "Firebase", "Express"],
       screenshot: rawImg,
       sourceCodeLink: "https://github.com/safdar7244/raw-app_frontend",
-      demoLink: "https://play.google.com/store/apps/details?id=com.tnc.rawapp",
-      hasDemo: true,
+      demoLink: "",
+      hasDemo: false,
       hasSourceCode: true,
       category: "Web",
     },
@@ -123,7 +123,7 @@ const ProjectSection = () => {
     {
       name: "Spotify Bot",
       description:
-        "An automation tool that handles Spotify account creation, bypassing bot protection and CAPTCHAs using browser automation techniques.",
+        "An automation tool that handles Spotify account creation using browser automation with Puppeteer.",
       technologies: ["Node.js", "Puppeteer"],
       screenshot: spotifyImg,
       sourceCodeLink: "https://github.com/safdar7244/Spotify_Bot/tree/main",
@@ -170,8 +170,8 @@ const ProjectSection = () => {
             Featured Projects
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            A collection of projects that showcase my expertise in full-stack
-            development, mobile apps, and automation
+            A collection of projects across AI products, full-stack web apps,
+            mobile apps, and automation
           </p>
         </motion.div>
 

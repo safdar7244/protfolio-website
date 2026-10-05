@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import me from "../assets/me.jpg";
-import resumePdf from "../assets/Files/Safdar.pdf";
+import resumePdf from "../assets/Files/Mohamed-Safdar-Resume.pdf";
 
 const BioSection = () => {
   const [displayText, setDisplayText] = useState("");
-  const fullText = "Software Engineer";
+  const fullText = "Senior Full-Stack Engineer";
 
   useEffect(() => {
     let index = 0;
@@ -32,7 +32,7 @@ const BioSection = () => {
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/mohamedsafdar",
+      url: "https://www.linkedin.com/in/mohamed-safdar-276a85218/",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -149,10 +149,11 @@ const BioSection = () => {
               variants={itemVariants}
               className="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-8"
             >
-              A grounded and solution-oriented software engineer with{" "}
-              <span className="text-primary-400 font-medium">4+ years</span> of experience
-              building scalable web and mobile applications. Passionate about clean code,
-              modern technologies, and delivering impactful solutions.
+              Full-stack engineer with{" "}
+              <span className="text-primary-400 font-medium">5+ years</span> of experience
+              building web products across React, Angular, Node.js, FastAPI, and .NET.
+              Most recently building the backend for an AI image and video generation
+              product on AWS.
             </motion.p>
 
             {/* CTA Buttons */}

@@ -11,56 +11,57 @@ const ExperienceSection = () => {
     {
       company: "ALL3D",
       title: "Web Engineer",
-      dateRange: "July 2025 - Present",
+      dateRange: "June 2025 - Present",
       type: "Full-time",
-      location: "Remote",
+      location: "Remote - United States",
       responsibilities: [
-        "Implementing end-to-end features for web applications",
-        "Building scalable solutions using Python, React, and AWS",
-        "Working with generative AI to enhance product capabilities",
+        "Built backend services for an AI image generation, editing, and video generation product, implementing the Aurora Serverless data layer and CloudWatch logging for its FastAPI orchestration server",
+        "Built batch image generation with AWS Lambda on EventBridge-scheduled runs, storing outputs in S3, with bulk image export and downloads",
+        "Migrated the frontend from React 16 to React 19 with Tailwind CSS, cutting page-load times by 40-60% through code splitting, removing unused dependencies, and optimizing data fetching",
+        "Automated go-to-market workflows, including data processing, batching, and email verification and validation",
       ],
       companyLogo: all3dLogo,
-      technologies: ["Python", "React", "AWS", "Generative AI"],
+      technologies: ["Python", "FastAPI", "React", "AWS Lambda", "Aurora Serverless", "S3", "EventBridge"],
     },
     {
       company: "Strategic Systems International",
-      title: "Software Engineer",
-      dateRange: "July 2022 - June 2025",
+      title: "Senior Software Engineer (promoted from Software Engineer)",
+      dateRange: "June 2022 - June 2025",
       type: "Full-time",
       location: "Lahore, Pakistan",
       responsibilities: [
-        "Worked on Vendor Management System for Cross Country Healthcare, Inc",
-        "Responsible for developing new features using Angular and .Net",
-        "Responsible for maintaining, enhancing and migrating internal frontend framework built on top of Angular",
-        "Migrated the VMS app frontend from Angular version 10 to Angular version 15",
+        "Owned and enhanced an internal Angular and Ignite UI frontend framework used across 2 client applications",
+        "Reduced tab-switching time from 3 seconds to under 1 second by resolving an Angular change detection issue",
+        "Developed core Intellify platform features using .NET, Node.js, and Angular, including an Excel bulk-import feature that reduced data-entry time by 80%",
+        "Implemented dynamic list views and caching strategies, reducing page-load times to under 2 seconds",
+        "Migrated the frontend from Angular 9 to Angular 15",
       ],
       companyLogo: ssiLogo,
-      technologies: ["Angular", ".NET", "TypeScript", "SQL Server"],
+      technologies: ["Angular", "Ignite UI", ".NET", "Node.js", "TypeScript"],
     },
     {
       company: "Boost79.hu",
       title: "Full Stack Software Engineer",
-      dateRange: "October 2020 - July 2022",
-      type: "Full-time",
+      dateRange: "October 2020 - May 2022",
+      type: "Contract",
       location: "Remote - Hungary",
       responsibilities: [
-        "Worked on multiple full stack projects including mobile and web applications",
-        "Responsible for designing architecture for multiple apps",
-        "Responsible for optimizing and improving the backend architecture",
+        "Led development of a chat web application and a peer-to-peer parking rental platform",
+        "Designed and integrated backend services with frontend interfaces",
+        "Set up CI and automated testing for deployments; worked with stakeholders to define scope and deliverables",
       ],
       companyLogo: boost79Logo,
-      technologies: ["React Native", "Node.js", "Firebase", "Stripe"],
+      technologies: ["React", "React Native", "Next.js", "Node.js", "Firebase", "Stripe"],
     },
     {
       company: "TapsNClicks",
-      title: "Full Stack Software Engineer",
-      dateRange: "March 2021 - October 2022",
-      type: "Contract",
-      location: "Remote",
+      title: "Full Stack Web Developer (Intern)",
+      dateRange: "March 2021 - October 2021",
+      type: "Internship",
+      location: "Lahore, Pakistan",
       responsibilities: [
-        "Responsible for developing an Admin app for a video sharing app",
-        "Responsible for continuous deployments of the application",
-        "Built and maintained React frontend with Node.js backend",
+        "Built an admin dashboard and engagement analytics for a short video sharing app",
+        "Improved content moderation workflows, reducing response time from 24 hours to under 4 hours",
       ],
       companyLogo: tapsnclicksLogo,
       technologies: ["React", "Node.js", "Firebase", "Express"],
@@ -180,7 +181,7 @@ const ExperienceSection = () => {
                       )}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-xl font-bold text-gray-900 truncate">
+                      <h3 className="text-xl font-bold text-gray-900">
                         {experience.company}
                       </h3>
                       <p className="text-primary-600 font-semibold">
